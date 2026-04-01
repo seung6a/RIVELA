@@ -324,11 +324,11 @@ body {
 .story_text p {
 	line-height: 34px;
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 200;
 }
 
 .story_text span {
-	font-weight: bold;
+	font-weight: 500;
 }
 
 .story_img_wrap img {
