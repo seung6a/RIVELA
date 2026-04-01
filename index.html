@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1400px">
+	<title>RIVELA</title>
+	<link rel="icon" href="./img/favicon.gif?v=1.0" type="image/gif">
+	<link rel="stylesheet" type="text/css" href="./CSS/jquery.fullPage.css" />
+	<!--필수 css.-->
+	<!--aos effect-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--aos css 연결-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--aos js 연결-->
+	<link href="./CSS/style.css" rel="stylesheet" type="text/css">
+	<!--내가만든css-->
+
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<!--필수 js들 시작-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"
+		integrity="sha256-UezNdLBLZaG/YoRcr48I68gr8pb5gyTBM+di5P8p6t8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./JS/jquery.fullPage.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!--필수 js들 끝-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+		rel="stylesheet">
+</head>
+
+
+<body>
+	<div id="fullpage">
+		<div class="section sec1 banner" id="section0"><!--클래스section필수. 미리 정해져있는 모양-->
+			<div id="header">
+				<h1 class="logo">
+					<a href="index.html">
+						<img src="./img/logo.png" alt="logo">
+					</a>
+
+				</h1>
+				<div class="back color-3">
+					<div class="row columns">
+						<ul class="menu align-center expanded text-center SMN_effect-13 gnb">
+							<li><a href="#story" data-hover="BRAND STORY"><span>BRAND STORY</span></a></li>
+							<li><a href="#program" data-hover="PROGRAM"><span>PROGRAM</span></a></li>
+							<li><a href="#product" data-hover="PRODUCT"><span>PRODUCT</span></a></li>
+							<li><a href="#reservation" data-hover="RESERVATION"><span>RESERVATION</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main_banner">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="./img/1_banner/banner3.jpg" alt="banner">
+							<div class="banner_text">
+								<h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">발끝에 닿는 첫 번째 휴식,
+									<span>RIVELA</span>
+								</h1>
+								<p data-aos="fade-up" data-aos-delay="800" data-aos-duration="1500">정제된 공간에서 마주하는 온전한 결의
+									미학.
+									<br>당신의 하루가 평온하게 마무리되는 모든 순간에 함께합니다.
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/1_banner/banner4.png" alt="banner">
+							<div class="banner_text">
+								<h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">가장 고요한 감각, 당신만을 위한
+									<span>RIVELA</span>의 쉼표
+								</h1>
+								<p data-aos="fade-up" data-aos-delay="800" data-aos-duration="1500">일상의 무게를 내려놓고 오직 나를
+									위한 회복에 집중하는 시간.
+									<br><span>RIVELA</span>가 제안하는 프리미엄 보태니컬 케어를 경험해 보세요.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div> -->
+				</div>
+
+			</div>
+			<div class="button">
+				<a href="#">
+					예약하기
+				</a>
+			</div>
+		</div>
+		<!-- banner end -->
+
+		<div class="section sec1 story" id="section1" data-anchor="story"><!--클래스section필수. 미리 정해져있는 모양-->
+			<div class="brandstory_wrap">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="story_inner">
+								<div class="story_img_wrap">
+									<img src="./img/2_brandstory/story1.png" alt="story1">
+								</div>
+								<div class="story_text ani-fade-up">
+									<h1>01. PREMIUM
+									</h1>
+									<p>
+										<br>단순히 고급스러운 공간을 만드는 것이 아니라,
+										<br>머무는 시간 자체가 특별한 경험이 되도록 설계합니다.
+										<br>리벨라는 작은 디테일 하나까지 놓치지 않습니다.
+										<br>피부에 닿는 소재의 질감, 공간을 채우는 온도와 향,
+										<br>그리고 시선이 머무는 모든 요소까지.
+										<br>고객이 이곳에 들어오는 순간부터
+										<br>일상과는 다른 결의 시간을 느낄 수 있도록,
+										<br>우리는 <span>‘관리’</span>가 아닌 <span>‘경험’</span>을 제공합니다.
+										<br>조용히 흐르는 시간 속에서자신에게 집중할 수 있는 여유,
+										<br>그것이 리벨라가 생각하는 <span>프리미엄</span>입니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="story_inner">
+								<div class="story_img_wrap">
+									<img src="./img/2_brandstory/story2-3.png" alt="story2">
+								</div>
+								<div class="story_text ani-fade-up">
+									<h1>02. PROFESSIONAL
+									</h1>
+									<p>
+										<br>우리는 결과로 말하는 케어를 지향합니다.
+										<br>겉으로 보이는 문제만을 다루는 것이 아니라,
+										<br>근본적인 <span>원인을 정확히 파악</span>하고
+										<br>개인별 상태에 맞는 <span>최적의 솔루션</span>을 제공합니다.
+										<br>체계적인 관리 프로세스와
+										<br>섬세한 터치, 그리고 축적된 경험을 기반으로
+										<br>고객 한 분 한 분에게 가장 적합한 케어를 설계합니다.
+										<br>눈에 보이지 않는 작은 차이가
+										<br>결과를 완전히 바꾼다는 것을 알기에,
+										<br>우리는 매 순간 기준을 낮추지 않습니다.
+										<br>리벨라의 전문성은 기술이 아닌,
+										<br><span>고객의 변화</span>를 통해 증명됩니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="story_inner">
+								<div class="story_img_wrap">
+									<img src="./img/2_brandstory/story3.png" alt="story3">
+								</div>
+								<div class="story_text ani-fade-up">
+									<h1>03. HEALING
+									</h1>
+									<p>
+										<br>리벨라는 단순히 몸을 관리하는 공간이 아닙니다.
+										<br>지친 하루를 내려놓고, 온전히 쉬어갈 수 있는 곳입니다.
+										<br>부드러운 조명과 따뜻한 온기,
+										<br>자연을 닮은 공간 속에서
+										<br>몸의 긴장은 자연스럽게 풀리고
+										<br>마음은 서서히 편안해집니다.
+										<br>아무것도 하지 않아도 괜찮은 시간,
+										<br>그 자체로 충분한 <span>휴식</span>이 되는 순간을
+										<br>우리는 중요하게 생각합니다.
+										<br>바쁜 일상 속에서 잠시 멈추어
+										<br>나를 돌아볼 수 있는 시간,
+										<br>그것이 리벨라가 전하는 진짜 <span>힐링</span>입니다.
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- <div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div> -->
+				</div>
+			</div>
+		</div>
+		<!-- brandstory_end -->
+
+		<div class="section sec2" id="section2" data-anchor="program">
+			<div id="program_wrap">
+				<!-------- tradeworld --------->
+				<section class="program1">
+					<div class="bg pro1_bg">
+						<div class="contents pro1_contents">
+							<div class="pro1_textAll">
+								<h2>Nail Recovery</h2>
+								<h3>숨기고 싶은 발에서, 보여주고 싶은 발로.</h3>
+								<p class="pro_text">손상된 발톱을 회복시키고, 본연의 건강함을 되찾는 프로그램입니다.
+									<br>전문적인 케어와 리벨라만의 리커버리 제품을 통해 약해진 발톱을
+									균형 잡힌 컨디션으로 관리합니다.
+								</p>
+								<p class="text">
+									(소요시간 1시간)
+								</p>
+								<p class="link"><a href="#reservation">예약하기</a><span></span></p>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-------- tw studio --------->
+				<section class="program2">
+					<div class="bg pro2_bg">
+						<div class="contents pro2_contents">
+							<div class="pro2_textAll">
+								<h2>Ingrown <br>Nail Therapy</h2>
+								<h3>파고드는 아픔에서, 걷는 즐거움으로.</h3>
+								<p class="pro_text">파고드는 발톱으로 인한 불편함과 통증을 완화하는 전문 케어입니다.
+									<br>발톱의 성장 방향을 고려한 섬세한 관리로 건강한 발톱 형태로 자연스럽게 회복될 수 있도록 돕습니다.
+								</p>
+								<p class="text">
+									(소요시간 1시간)
+								</p>
+								<p class="link"><a href="#reservation">예약하기</a></p>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-------- koreamesse --------->
+				<section class="program3">
+					<div class="bg pro3_bg">
+						<div class="contents pro3_contents">
+							<div class="pro3_textAll">
+								<h2>Foot Renewal</h2>
+								<h3>거칠어진 발 끝에서, 닿고 싶은 살결로.</h3>
+								<p class="pro_text">거칠고 건조해진 발 피부를 부드럽고 건강하게 되돌리는 케어입니다.
+									<br>각질 정돈과 보습 관리로 발의 균형을 회복시키고, 한층 매끄럽고 편안한 발 상태를 만들어드립니다.
+								</p>
+								<p class="text">
+									(소요시간 1시간)
+								</p>
+								<p class="link"><a href="#reservation">예약하기</a><span></span></p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="program4">
+					<div class="bg pro4_bg">
+						<div class="contents pro4_contents">
+							<div class="pro4_textAll">
+								<h2>Signature <br> Foot Spa</h2>
+								<h3>지친 일상에서, 온전한 쉼으로.</h3>
+								<p class="pro_text">지친 발에 깊은 휴식을 선사하는 리벨라의 시그니처 스파 프로그램입니다.
+									<br>따뜻한 스파와 아로마 케어를 통해 발의 긴장을 풀어주고, 몸과 마음까지 편안해지는 힐링 시간을 제공합니다.
+								</p>
+								<p class="text">
+									(소요시간 1시간)
+								</p>
+								<p class="link"><a href="#reservation">예약하기</a><span></span></p>
+
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<!-- program_end -->
+
+		<div class="section sec3" id="section3" data-anchor="product">
+			<div class="product_wrap">
+				<div class="left-half">
+					<div class="bg-video">
+						<video src="./img/4_product/video2.mp4" loop muted autoplay playsinline preload="auto"></video>
+					</div>
+
+				</div>
+
+				<div class="right-half">
+					<div class="product_inner">
+						<h1>Ritual for Recovery</h1>
+						<p>지친 하루 끝, 발에 머무는 깊은 휴식</p>
+
+						<div class="swiper product-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="img_box">
+										<img src="./img/4_product/product_1-2.png" alt="product" class="img_default">
+										<img src="./img/4_product/product_1-1.png" alt="product hover"
+											class="img_hover">
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="img_box">
+										<img src="./img/4_product/product_2.jpg" alt="product" class="img_default">
+										<img src="./img/4_product/product_2-1.png" alt="product hover"
+											class="img_hover">
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="img_box">
+										<img src="./img/4_product/product_3.png" alt="product" class="img_default">
+										<img src="./img/4_product/product_3-1.png" alt="product hover"
+											class="img_hover">
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<!-- <div class="swiper-pagination"></div> -->
+						</div>
+
+						<a href="#location" class="product_a">
+							오프라인 스토어 안내
+							<img src="./img/4_product/제품 화살표.svg" alt="제품 화살표">
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- product_wrap_end -->
+		<div class="section sec4" id="section4">
+			<div class="event_wrap">
+				<div class="event">
+					<div class="event_textbox" data-aos="fade-right" data-aos-duration="1500">
+						<h4>[가정의 달 특별 기획전]</h4>
+						<h1>"가장 낮은 곳의 헌신을 위로합니다."</h1>
+						<p>"평생 가족을 위해 쉼 없이 달려오느라 투박해진 부모님의 발.
+							<br>이제 그 깊은 시간의 흔적을 리벨라가 부드럽게 어루만져 드립니다.
+							<br>사랑한다는 말 대신, 가장 편안한 휴식을 선물하세요.
+						</p>
+						<a href="#reservation">부모님께 선물하러 가기
+							<img src="./img/5_event/제품 화살표.svg" alt="event">
+						</a>
+					</div>
+					<div class="event_img" data-aos="fade-left" data-aos-duration="1500">
+						<img src="./img/5_event/event_img.png" alt="event">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- event_wrap_end -->
+		<div class="section sec4" id="section5" data-anchor="reservation">
+			<div class="reservation_scene">
+
+				<div class="reservation_bg"></div>
+				<div class="reservation_blur"></div>
+
+				<div class="reservation_intro">
+					<h1 data-aos="fade-up" data-aos-duration="2000">
+						리벨라에서의 온전한 휴식을 위해,
+						<br>당신의 발에 쉼을 선물하세요.
+					</h1>
+					<img src="./img/6_reservation/scroll_down.png" alt="scroll_down" data-aos="fade-down"
+						data-aos-duration="2000" data-aos-delay="2000">
+				</div>
+
+				<div class="reservation_panel">
+					<div class="booking_box">
+						<div class="booking_item">
+							<h3>PROGRAM</h3>
+							<select id="program_select">
+								<option value="none">프로그램을 선택해 주세요.</option>
+								<option value="p1">Nail Recovery | 발톱 복구 케어</option>
+								<option value="p2">Ingrown Nail Therapy | 파고드는 발톱 교정</option>
+								<option value="p3">Foot Renewal | 각질 & 발 피부 재생</option>
+								<option value="p4">Signature Foot Spa | 시그니처 발 스파</option>
+							</select>
+						</div>
+
+						<div class="booking_item date_section">
+							<h3>DATE</h3>
+							<div class="date_picker">
+								<ul class="date_list">
+									<li class="active">03.12<span>목</span></li>
+									<li>03.13<span>금</span></li>
+									<li>03.14<span>토</span></li>
+									<li>03.15<span>일</span></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="booking_item time_section">
+							<h3>TIME</h3>
+							<div class="time_grid">
+								<button>11:00</button>
+								<button class="selected">13:00</button>
+								<button>14:00</button>
+								<button>16:00</button>
+								<button>17:00</button>
+								<button>19:00</button>
+							</div>
+						</div>
+
+						<button class="res_confirm_btn">온전한 휴식 예약하기</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- reservation_end -->
+		<div class="section sec4" id="section6">
+			<div class="review_wrap">
+				<div class="review_title" data-aos="fade-up" data-aos-duration="1200">
+					<p>Moments That Change Your Steps</p>
+					<h1>걸음이 달라지는 순간의 기록</h1>
+				</div>
+				<div class="swiper card review_card"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+					<div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+						<div class="swiper-slide">
+							<!--swiper-slide는 필수 클래스-->
+							<img src="./img/7_review/review_1.png" alt="review">
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/7_review/review_2.png" alt="review">
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/7_review/review_3.png" alt="review">
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/7_review/review_4.png" alt="review">
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/7_review/review_5.png" alt="review">
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/7_review/review_6.png" alt="review">
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/7_review/review_7.png" alt="review">
+						</div>
+					</div>
+				</div><!--mb E-->
+			</div>
+		</div>
+		<!-- review_end -->
+		<div class="section sec4" id="section7" data-anchor="location">
+			<div class="map_wrap">
+				<div class="map_contents">
+					<h1>THE ART OF NAIL RECOVERY</h1>
+					<p class="map_subtext">당신의 발걸음이 다시 가벼워지는 곳. 프라이빗한 휴식 공간, 리벨라로 초대합니다. </p>
+				</div>
+				<div class="map_wrap2">
+					<div class="map_img">
+						<a href="https://www.google.com/maps/place/%EB%B6%80%EC%82%B0%EB%82%98%EB%9E%98%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%99%EC%9B%90/@35.0999645,129.0369797,17z/data=!3m1!4b1!4m6!3m5!1s0x3568e90af8798c73:0x4e3015aa23966ba!8m2!3d35.0999645!4d129.0369797!16s%2Fg%2F11cm0h6m3h?entry=ttu"
+							target="_blank" class="map_link">
+							<img src="./img/8_map/map.png" alt="map" data-aos="zoom-in" data-aos-duration="1500">
+						</a>
+					</div>
+					<div class="map_text">
+						<p><span>ADDRESS</span>
+							<br>부산광역시 중구 중앙대로 26, 1층 (리벨라)
+						</p>
+						<p><span>PARKING</span>
+							<br> 건물 뒤편 RIVELA 전용 주차장 이용 (무료 주차 2시간 지원)
+						</p>
+						<p><span>CONTACT & HOURS</span>
+							<br>T. 051-245-1650
+							<br>Mon - Sat 11:00 - 20:00
+							<br>Sun & Holiday Closed
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- map_end -->
+		<div class="section sec4" id="section8">
+			<div class="question_wrap">
+				<div class="question_box_wrap">
+					<div class="question_box" data-aos="fade-up" data-aos-duration="1500">
+						<h1>리벨라는 당신의 건강한 발을 위한 모든 질문을 환영합니다.</h1>
+						<p>고민되는 부위의 사진을 첨부해 주시면 , 전문 푸스플레거가 더 상세히 안내해드립니다.</p>
+
+						<form action="#" method="POST" class="inquiry-form">
+							<div class="form-row split-row">
+								<input type="text" id="inquiry_name" placeholder="성함" required>
+								<input type="tel" id="inquiry_phone" placeholder="전화번호" required>
+							</div>
+
+							<div class="form-row">
+								<select id="inquiry_program" required>
+									<option value="" disabled selected hidden>프로그램</option>
+									<option value="basic">Nail Recovery | 발톱 복구 케어</option>
+									<option value="ingrown">Ingrown Nail Therapy | 파고드는 발톱 교정</option>
+									<option value="premium">Foot Renewal | 각질 & 발 피부 재생</option>
+									<option value="spa">Signature Foot Spa | 시그니처 발 스파</option>
+								</select>
+							</div>
+
+							<div class="form-row">
+								<textarea id="inquiry_message" placeholder="문의하기" rows="6" required></textarea>
+							</div>
+
+							<div class="form-row">
+								<button type="button" class="submit-btn inquiry-submit-btn">문의하기</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 문의하기 end -->
+		<div class="section sec4 fp-auto-height" id="section9">
+			<div class="footer_wrap">
+				<div class="footer_inner">
+					<div class="footer_logo">
+						<h1>
+							<a href="index.html">
+								<img src="./img/10_footer/logo1.png" alt="logo">
+							</a>
+						</h1>
+					</div>
+
+					<!-- 정보 -->
+					<div class="footer_info">
+						<p>상호명 : 리벨라(RIVELA) | 대표 : 홍길동 사업자등록번호 : 123-45-67890
+							<br>통신판매업신고번호 : 제2026-부산중구-0123호
+							<br>주소 : 부산광역시 중구 중앙대로 26, 1층 리벨라 | 고객센터 : 051-245-1650
+						</p>
+						<p>Copyright @ 2026 RIVELA All Rights Reserved</p>
+					</div>
+					<div>
+						<ul class="footer_icon">
+							<li><a href="#">
+									<img src="./img/10_footer/instagram.png" alt="instagram">
+								</a></li>
+							<li><a href="#">
+									<img src="./img/10_footer/facebook.png" alt="facebook">
+								</a></li>
+							<li><a href="#">
+									<img src="./img/10_footer/twitter.png" alt="twitter">
+								</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 예약 완료 모달 -->
+	<div class="reserve_modal" id="reserveModal">
+		<div class="reserve_modal_overlay"></div>
+
+		<div class="reserve_modal_box">
+			<button class="reserve_modal_close" id="reserveModalClose" type="button">×</button>
+
+			<p class="reserve_modal_kicker">RESERVATION COMPLETE</p>
+			<h2>예약이 완료되었습니다.</h2>
+			<p class="reserve_modal_desc">
+				리벨라에서의 온전한 휴식을 준비해둘게요.
+			</p>
+
+			<div class="reserve_modal_info">
+				<p><span>PROGRAM</span><strong id="modalProgram">-</strong></p>
+				<p><span>DATE</span><strong id="modalDate">-</strong></p>
+				<p><span>TIME</span><strong id="modalTime">-</strong></p>
+			</div>
+
+			<button class="reserve_modal_btn" id="reserveModalConfirm" type="button">
+				확인
+			</button>
+		</div>
+	</div>
+
+	<!-- 문의 완료 모달 -->
+	<div class="inquiry_modal" id="inquiryModal">
+		<div class="inquiry_modal_overlay"></div>
+
+		<div class="inquiry_modal_box">
+			<button class="inquiry_modal_close" id="inquiryModalClose" type="button">×</button>
+
+			<p class="inquiry_modal_kicker">INQUIRY COMPLETE</p>
+			<h2>문의가 접수되었습니다.</h2>
+			<p class="inquiry_modal_desc">
+				남겨주신 내용을 확인한 뒤 빠르게 안내드릴게요.
+			</p>
+
+			<div class="inquiry_modal_info">
+				<p><span>NAME</span><strong id="inquiryModalName">-</strong></p>
+				<p><span>PHONE</span><strong id="inquiryModalPhone">-</strong></p>
+				<p><span>PROGRAM</span><strong id="inquiryModalProgram">-</strong></p>
+				<p class="inquiry_message_row">
+					<span>MESSAGE</span>
+					<strong id="inquiryModalMessage">-</strong>
+				</p>
+			</div>
+
+			<button class="inquiry_modal_btn" id="inquiryModalConfirm" type="button">
+				확인
+			</button>
+		</div>
+	</div>
+
+
+	<!-- 탑 버튼 -->
+	<button class="simple_top_btn" id="topBtn">TOP</button>
+
+	<script src="./JS/script.js"></script>
+	<!-- 내가 꾸민 js -->
+
+
+
+
+</body>
+
+</html>
