@@ -248,7 +248,7 @@ $(document).ready(function () {
                 playVideoInSection($activeSection);
                 pauseVideosOutsideSection($activeSection);
 
-                $('#topBtn').removeClass('show');
+                $('#topBtn').removeClass('show footer-mode');
                 resetReservationPanel();
             },
 
@@ -290,10 +290,24 @@ $(document).ready(function () {
                     resetReservationPanel();
                 }
 
+                // -----------------------------------
+                // TOP 버튼 표시 제어
+                // 2페이지부터 보이기
+                // -----------------------------------
                 if (index > 1) {
                     $('#topBtn').addClass('show');
                 } else {
                     $('#topBtn').removeClass('show');
+                }
+
+                // -----------------------------------
+                // TOP 버튼 색상 제어
+                // program / footer 에서 밝은색
+                // -----------------------------------
+                if (anchorLink === 'program' || anchorLink === 'footer') {
+                    $('#topBtn').addClass('footer-mode');
+                } else {
+                    $('#topBtn').removeClass('footer-mode');
                 }
             }
         });
@@ -515,4 +529,3 @@ let reviewSwiper = new Swiper('.review_card', {
         disableOnInteraction: false
     }
 });
-
