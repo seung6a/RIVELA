@@ -53,6 +53,12 @@ ul {
 	font-weight: 500;
 	font-display: swap;
 }
+@font-face {
+	font-family: 'Pretendard';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+	font-weight: 600;
+	font-display: swap;
+}
 
 @import url('//fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
 
@@ -1637,7 +1643,9 @@ section.program4 {
 	display: block;
 	padding-right: 20px;
 }
-
+.footer_info p span{
+	color: #ffffffbd;
+}
 /* ================= 예약 완료 모달 ================= */
 .reserve_modal {
 	position: fixed;
@@ -1990,64 +1998,100 @@ body.modal_open {
 
 
 /* ================= TOP 버튼 ================= */
-/* =========================
-   SIMPLE PREMIUM TOP
-========================= */
-
-.simple_top_btn {
+.top-btn {
 	position: fixed;
 	right: 80px;
 	bottom: 80px;
+	z-index: 999;
 
-	padding: 10px 16px;
-	border-radius: 999px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
 
-	background: rgba(43, 51, 44, 0.85);
-	color: #f5f2eb;
-
-	border: 1px solid rgba(217, 207, 172, 0.4);
-
-	font-family: 'Cinzel', serif;
-	font-size: 11px;
-	letter-spacing: 2px;
-
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0;
 	cursor: pointer;
-	z-index: 9999;
-
-	box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 
 	opacity: 0;
 	visibility: hidden;
-	transform: translateY(20px);
-	transition: all 0.3s ease;
+	pointer-events: none;
+	transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
-.simple_top_btn.show {
-	opacity: 0.85;
+.top-btn.show {
+	opacity: 1;
 	visibility: visible;
-	transform: translateY(0);
+	pointer-events: auto;
 }
 
-/* hover */
-.simple_top_btn:hover {
-	background: #344739;
-	color: #d9cfac;
-	border-color: #d9cfac;
+.top-btn:hover {
+	transform: translateY(-5px);
+}
 
+.top-btn__icon {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2px;
+}
+
+.top-btn__icon svg {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/* 기본 색 */
+.top-btn__icon svg * {
+	fill: #2b332c !important;
+}
+
+.top-btn__text {
+	font-size: 12px;
+	letter-spacing: 0.18em;
+	color: #2b332c;
+	font-family: "Cinzel", serif;
+	font-weight: 500;
 	transform: translateY(-2px);
+	text-align: center;
+	letter-spacing: 1px;
+	margin-left: 4px;
 }
 
-/* 클릭 */
-.simple_top_btn:active {
-	transform: translateY(-1px) scale(0.98);
+/* footer에서만 색 변경 */
+.top-btn.footer-mode .top-btn__icon svg * {
+	fill: #f5f2eb !important;
+}
+
+.top-btn.footer-mode .top-btn__text {
+	color: #f5f2eb;
+}
+
+/* 부드럽게 색 바뀌게 */
+.top-btn__icon svg *,
+.top-btn__text {
+	transition: fill 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 /* 모바일 */
-@media screen and (max-width: 768px) {
-	.simple_top_btn {
-		right: 18px;
-		bottom: 18px;
-		padding: 8px 12px;
+@media (max-width: 768px) {
+	.top-btn {
+		right: 20px;
+		bottom: 20px;
+	}
+
+	.top-btn__icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	.top-btn__text {
 		font-size: 10px;
 	}
 }
